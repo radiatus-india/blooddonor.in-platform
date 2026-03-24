@@ -11,3 +11,7 @@ Please report it privately to the maintainers with:
 
 This public starter intentionally excludes production credentials and infrastructure, but normal secure coding practices still apply.
 
+Security contact for this repository:
+
+- Esthar
+- info@radiatus.com

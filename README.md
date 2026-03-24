@@ -1,6 +1,6 @@
 # BloodDonor.in Platform
 
-BloodDonor.in is an open source effort to improve how blood donors, recipients, volunteers, and organizers coordinate during urgent and planned blood needs in India.
+BloodDonor.in is an open source initiative focused on improving how blood donors, recipients, volunteers, and organizers coordinate during urgent and planned blood needs in India.
 
 This repository is the public-safe application starter for the platform. It intentionally excludes production data, infrastructure configuration, private integrations, schema dumps, credentials, and operational tooling. The goal is to give contributors a clean base they can understand quickly and extend safely.
 
@@ -98,6 +98,13 @@ Contributions are welcome, especially in:
 - documentation and onboarding
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Maintainer contact
+
+This public repository is currently coordinated by Esthar.
+
+- Maintainer: Esthar
+- Contact: info@radiatus.com
 
 ## Community standards
 

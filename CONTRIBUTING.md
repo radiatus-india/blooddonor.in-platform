@@ -29,3 +29,9 @@
 - include screenshots for UI changes when useful
 - avoid unrelated formatting churn
 
+## Maintainer
+
+Maintainer contact for this repository:
+
+- Esthar
+- info@radiatus.com
