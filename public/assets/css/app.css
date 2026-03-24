@@ -206,6 +206,22 @@ textarea {
     background: linear-gradient(180deg, #fff1df 0%, #fff 100%);
 }
 
+.result-card {
+    padding: 1.25rem;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+}
+
+.result-card-ready {
+    background: #eef9f1;
+    border-color: #acd7b6;
+}
+
+.result-card-not_ready {
+    background: #fff2ef;
+    border-color: #efbeb5;
+}
+
 .site-footer {
     border-top: 1px solid var(--line);
     margin-top: 3rem;
@@ -224,4 +240,3 @@ textarea {
         gap: 0.5rem;
     }
 }
-
