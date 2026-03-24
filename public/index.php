@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/src/bootstrap.php';
 
-render_page('BloodDonor.in Platform', '/', function (): void {
+render_page('BloodDonor.in Platform', '', function (): void {
     $stats = app_stats();
     $roadmap = roadmap_items();
     ?>
@@ -18,8 +18,8 @@ render_page('BloodDonor.in Platform', '/', function (): void {
                     internal operations, or deployment secrets.
                 </p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="/find-donors.php">Explore donor search</a>
-                    <a class="button button-secondary" href="/request-blood.php">View request flow</a>
+                    <a class="button button-primary" href="<?= htmlspecialchars(app_url('find-donors.php')) ?>">Explore donor search</a>
+                    <a class="button button-secondary" href="<?= htmlspecialchars(app_url('request-blood.php')) ?>">View request flow</a>
                 </div>
             </div>
             <div class="hero-card">
@@ -61,4 +61,3 @@ render_page('BloodDonor.in Platform', '/', function (): void {
     </section>
     <?php
 });
-

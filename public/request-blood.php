@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/src/bootstrap.php';
 
-render_page('Request Blood', '/request-blood.php', function (): void {
+render_page('Request Blood', 'request-blood.php', function (): void {
     ?>
     <section class="page-head">
         <div class="container">
@@ -46,4 +46,3 @@ render_page('Request Blood', '/request-blood.php', function (): void {
     </section>
     <?php
 });
-

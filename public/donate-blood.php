@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/src/bootstrap.php';
 
-render_page('Donate Blood', '/donate-blood.php', function (): void {
+render_page('Donate Blood', 'donate-blood.php', function (): void {
     $steps = [
         'Check eligibility and timing before donation.',
         'Understand the screening and consent process.',
@@ -40,4 +40,3 @@ render_page('Donate Blood', '/donate-blood.php', function (): void {
     </section>
     <?php
 });
-

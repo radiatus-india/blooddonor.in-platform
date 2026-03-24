@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/src/bootstrap.php';
 
-render_page('About', '/about.php', function (): void {
+render_page('About', 'about.php', function (): void {
     ?>
     <section class="page-head">
         <div class="container">
@@ -38,4 +38,3 @@ render_page('About', '/about.php', function (): void {
     </section>
     <?php
 });
-

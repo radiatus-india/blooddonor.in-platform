@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/src/bootstrap.php';
 
-render_page('Find Donors', '/find-donors.php', function (): void {
+render_page('Find Donors', 'find-donors.php', function (): void {
     $groups = blood_groups();
     $cities = supported_cities();
     $hints = donor_search_hints();
@@ -49,4 +49,3 @@ render_page('Find Donors', '/find-donors.php', function (): void {
     </section>
     <?php
 });
-

@@ -5,11 +5,11 @@ declare(strict_types=1);
 function render_page(string $title, string $activePage, callable $content): void
 {
     $navigation = [
-        '/' => 'Home',
-        '/find-donors.php' => 'Find Donors',
-        '/request-blood.php' => 'Request Blood',
-        '/donate-blood.php' => 'Donate Blood',
-        '/about.php' => 'About',
+        '' => 'Home',
+        'find-donors.php' => 'Find Donors',
+        'request-blood.php' => 'Request Blood',
+        'donate-blood.php' => 'Donate Blood',
+        'about.php' => 'About',
     ];
     ?>
     <!doctype html>
@@ -19,15 +19,15 @@ function render_page(string $title, string $activePage, callable $content): void
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?= htmlspecialchars($title) ?></title>
         <meta name="description" content="Open source starter for the BloodDonor.in public platform.">
-        <link rel="stylesheet" href="/assets/css/app.css">
+        <link rel="stylesheet" href="<?= htmlspecialchars(app_url('assets/css/app.css')) ?>">
     </head>
     <body>
         <header class="site-header">
             <div class="container shell">
-                <a class="brand" href="/">BloodDonor<span>.in</span></a>
+                <a class="brand" href="<?= htmlspecialchars(app_url()) ?>">BloodDonor<span>.in</span></a>
                 <nav class="nav">
                     <?php foreach ($navigation as $path => $label): ?>
-                        <a class="<?= $activePage === $path ? 'is-active' : '' ?>" href="<?= $path ?>">
+                        <a class="<?= $activePage === $path ? 'is-active' : '' ?>" href="<?= htmlspecialchars(app_url($path)) ?>">
                             <?= htmlspecialchars($label) ?>
                         </a>
                     <?php endforeach; ?>
@@ -56,9 +56,8 @@ function render_page(string $title, string $activePage, callable $content): void
                 </div>
             </div>
         </footer>
-        <script src="/assets/js/app.js"></script>
+        <script src="<?= htmlspecialchars(app_url('assets/js/app.js')) ?>"></script>
     </body>
     </html>
     <?php
 }
-

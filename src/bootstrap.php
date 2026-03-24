@@ -12,6 +12,17 @@ function app_name(): string
 
 function app_base_url(): string
 {
-    return '/';
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $scriptDir = str_replace('\\', '/', dirname($scriptName));
+
+    if ($scriptDir === '/' || $scriptDir === '.') {
+        return '/';
+    }
+
+    return rtrim($scriptDir, '/') . '/';
 }
 
+function app_url(string $path = ''): string
+{
+    return app_base_url() . ltrim($path, '/');
+}
