@@ -67,6 +67,10 @@ php -S localhost:8080 -t public
 
 Then open <http://localhost:8080>.
 
+## Repository hygiene
+
+The repository includes a minimal GitHub Actions workflow that lints all PHP files on pushes and pull requests.
+
 ## Design principles
 
 - public-interest software first
@@ -103,4 +107,3 @@ Start with [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 [MIT](LICENSE)
-
